@@ -1,0 +1,27 @@
+img {
+  width: 125px; /* Ancho de la imagen */
+  height: 125px; /* Alto de la imagen (igual al ancho para hacerla redonda) */
+  border-radius: 50%; /* Hace la imagen redonda */
+  object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+  border: 2px solid; /* Opcional: añade un borde */
+  animation: borderColorChange 3s infinite; /* Animación de cambio de color */
+  margin: 2rem;
+}
+
+@keyframes borderColorChange {
+  0% {
+    border-color: rgb(120, 19, 19);
+  }
+  25% {
+    border-color: rgb(178, 178, 36);
+  }
+  50% {
+    border-color: rgb(14, 216, 14);
+  }
+  75% {
+    border-color: rgb(14, 134, 231);
+  }
+  100% {
+    border-color: rgb(174, 19, 174);
+  }
+}

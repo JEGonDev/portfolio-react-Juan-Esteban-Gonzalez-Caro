@@ -3,6 +3,6 @@ import './NameDev.css'
 
 export const NameDev = () => {
   return (
-    <h1>JEGonDev</h1>
+    <h2>JEGonDev</h2>
   )
 }
