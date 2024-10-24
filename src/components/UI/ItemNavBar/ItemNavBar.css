@@ -1,5 +1,27 @@
-a {
+.custom-item.about {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: rgb(252, 254, 253);
   font-size: 0.9rem;
+}
+
+.custom-item.about:hover {
+  color: rgb(247, 254, 156);
+}
+
+.custom-item.contact {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(252, 254, 253);
+  font-size: 1rem; 
+  margin-bottom: 1rem; 
+  background-color: rgb(61, 61, 61);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.custom-item.contact:hover {
+  color: rgb(247, 254, 156);
 }
