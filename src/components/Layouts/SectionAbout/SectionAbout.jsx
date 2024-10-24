@@ -3,6 +3,7 @@ import './SectionAbout.css'
 import { NameProfession } from '../../UI/NameProfession/NameProfession'
 import { Description } from '../../UI/Description/Description'
 import { PhotoPresentation } from '../../UI/PhotoPresentation/PhotoPresentation'
+import { ContactBar } from '../../UI/ContactBar/ContactBar'
 
 export const SectionAbout = () => {
   return (
@@ -15,6 +16,7 @@ export const SectionAbout = () => {
         <div className="photo">
           <PhotoPresentation/>
         </div>
+          <ContactBar/>
       </div>
     </>
   )
