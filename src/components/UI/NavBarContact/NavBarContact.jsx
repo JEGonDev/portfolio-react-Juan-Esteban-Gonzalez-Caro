@@ -4,15 +4,22 @@ import { ItemNavBar } from '../ItemNavBar/ItemNavBar'
 import { FaLinkedin } from "react-icons/fa"
 import { FaGithubSquare } from "react-icons/fa"
 import { MdOutgoingMail } from "react-icons/md"
+import { PiReadCvLogoFill } from "react-icons/pi"
 
 export const NavBarContact = () => {
 
   const contactItems = [
-    { icon: FaLinkedin, text: 'Linkedin', 
+    { icon: PiReadCvLogoFill, 
+      text: 'Descargar CV', 
+      link: 'https://drive.google.com/uc?export=download&id=1SBV2jHNyh-ODPJMbuibESzpBRvy5zoq2'},
+    { icon: FaLinkedin, 
+      text: 'Linkedin', 
       link: 'https://www.linkedin.com/in/juan-esteban-gonz%C3%A1lez-caro-41330b25b/'},
-    { icon: FaGithubSquare, text: 'GitHub', 
+    { icon: FaGithubSquare, 
+      text: 'GitHub', 
       link: 'https://github.com/JEGonDev'},
-    { icon: MdOutgoingMail, text: 'juanestebangonzalezcaro567@gmail.com', 
+    { icon: MdOutgoingMail, 
+      text: 'juanestebangonzalezcaro567@gmail.com', 
       link: 'https://mail.google.com/mail/?view=cm&to=juanestebangonzalezcaro567@gmail.com' },
   ]
 
