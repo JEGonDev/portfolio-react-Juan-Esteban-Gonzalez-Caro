@@ -13,8 +13,28 @@ const projects = [
   },
 ]
 
-export const ProjectList = () => {
+export const ProjectList = ({ selectedType }) => {
+
+  let filteredProjects
+
+  if (selectedType === 'Todos') {
+    filteredProjects = projects
+  } else {
+    filteredProjects = projects.filter((project) => project.type === selectedType)
+  }
+
   return (
-    <div>ProjectList</div>
+    <div className="project-list">
+      {filteredProjects.map(project => (
+        <div key={project.id} className="project-card">
+          <div className="project-info">
+            <h5>{project.type}</h5>
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+          </div>
+          <img src={project.image} alt={project.title} className="project-image" />
+      </div>
+      ))}
+    </div>
   )
 }
