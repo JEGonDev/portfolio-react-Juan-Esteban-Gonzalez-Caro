@@ -1,3 +1,7 @@
+.list {
+  list-style: none;
+}
+
 .custom-item.about {
   display: flex;
   align-items: center;
@@ -24,4 +28,20 @@
 
 .custom-item.contact:hover {
   color: rgb(247, 254, 156);
+}
+
+.custom-item.projects {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.custom-item.projects:hover {
+  color: rgb(247, 254, 156);
+  text-decoration: underline;
 }

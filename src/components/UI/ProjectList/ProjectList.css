@@ -1,0 +1,42 @@
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 2rem;
+  background-color: rgb(28, 30, 29); 
+  color: rgb(241, 241, 241); 
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 2rem;
+}
+
+.type-project {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #edff93;
+  margin-bottom: 8px;
+}
+
+.name-project {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 241);
+  margin-bottom: 10px;
+}
+
+.description-project {
+  font-size: 1rem;
+  color: rgb(227, 214, 214);
+  line-height: 1.5;
+}
+
+.project-image {
+  width: 40%; 
+  height: auto;
+  max-width: 300px;
+  border-radius: 10px;
+}

@@ -1,0 +1,10 @@
+.nav-type-projects {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333; /* Fondo oscuro */
+  border-radius: 20px; /* Bordes redondeados */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: fit-content;
+  margin-bottom: 4rem;
+}

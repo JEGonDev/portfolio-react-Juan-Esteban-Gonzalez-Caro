@@ -5,9 +5,11 @@ import './SectionProjects.css'
 
 export const SectionProjects = () => {
   return (
-    <div className='my-projects'>
-      <NavBarProjects/>
-      <ProjectList/>
-    </div>
+    <section>
+      <div className='my-projects'>
+        <NavBarProjects variant='projects'/>
+        <ProjectList/>
+      </div>
+    </section>
   )
 }

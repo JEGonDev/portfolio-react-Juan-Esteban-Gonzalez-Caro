@@ -7,6 +7,6 @@ header{
   background-color: rgb(28, 28, 29);
   align-items: center;
   height: auto;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
