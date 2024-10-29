@@ -4,22 +4,22 @@ import './NavBarAbout.css'
 
 const navItems = [
   { link: '#home', text: 'Inicio' },
+  { link: '#contact', text: 'Contacto' },
   { link: '#services', text: 'Proyectos' },
   { link: '#stack', text: 'Tech Stack' },
-  { link: '#about', text: 'Sobre mi' },
-  { link: '#contact', text: 'Contacto' },
 ];
 
 export const NavBarAbout = () => {
   return (
     <nav>
         <ul className='items-about'>
-        {navItems.map(item => (
+        {navItems.map((item, index) => (
           <ItemNavBar 
+            key={index}
             link={item.link} 
             text={item.text} 
             variant='about'
-            />
+          />
         ))}</ul>
     </nav>
   )
