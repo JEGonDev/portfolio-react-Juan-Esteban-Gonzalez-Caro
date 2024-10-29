@@ -4,9 +4,9 @@ import './NavBarAbout.css'
 
 const navItems = [
   { link: '#home', text: 'Inicio' },
-  { link: '#about', text: 'Sobre mi' },
   { link: '#services', text: 'Proyectos' },
   { link: '#stack', text: 'Tech Stack' },
+  { link: '#about', text: 'Sobre mi' },
   { link: '#contact', text: 'Contacto' },
 ];
 

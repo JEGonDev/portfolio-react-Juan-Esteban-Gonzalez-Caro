@@ -35,22 +35,6 @@ const projects = [
     techStack: ['Java', 'Spring Boot', 'Spring Security', 'MySQL'],
     image: project1,
   },
-  {
-    id: 5,
-    title: 'API PetShop',
-    type: 'Frontend',
-    description: 'API Rest de una tienda de mascotas, CRUD y seguridad web con Spring Boot y Spring Security',
-    techStack: ['Java', 'Spring Boot', 'Spring Security', 'MySQL'],
-    image: project1,
-  },
-  {
-    id: 6,
-    title: 'API PetShop',
-    type: 'Backend',
-    description: 'API Rest de una tienda de mascotas, CRUD y seguridad web con Spring Boot y Spring Security',
-    techStack: ['Java', 'Spring Boot', 'Spring Security', 'MySQL'],
-    image: project1,
-  }
 ]
 
 export const ProjectList = ({ selectedType }) => {

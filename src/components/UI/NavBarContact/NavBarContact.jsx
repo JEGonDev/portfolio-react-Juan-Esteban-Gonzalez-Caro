@@ -2,7 +2,7 @@ import React from 'react'
 import './NavBarContact.css'
 import { ItemNavBar } from '../ItemNavBar/ItemNavBar'
 import { FaLinkedin } from "react-icons/fa"
-import { FaGithubSquare } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa";
 import { MdOutgoingMail } from "react-icons/md"
 import { PiReadCvLogoFill } from "react-icons/pi"
 
@@ -15,7 +15,7 @@ export const NavBarContact = () => {
     { icon: FaLinkedin, 
       text: 'Linkedin', 
       link: 'https://www.linkedin.com/in/juan-esteban-gonz%C3%A1lez-caro-41330b25b/'},
-    { icon: FaGithubSquare, 
+    { icon: FaGithub, 
       text: 'GitHub', 
       link: 'https://github.com/JEGonDev'},
     { icon: MdOutgoingMail, 

@@ -1,0 +1,25 @@
+.tech-section {
+  background-color: rgb(28, 30, 29);
+  margin: 0;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  border-radius: 2rem;
+  height: 30rem;
+  width: auto;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+  align-items: center;
+  gap: 1rem;
+}
+
+.type-tech {
+  text-align: center;
+  font-size: 1.5rem;
+}
