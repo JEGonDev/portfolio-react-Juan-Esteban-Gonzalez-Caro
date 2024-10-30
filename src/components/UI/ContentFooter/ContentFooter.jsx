@@ -6,6 +6,10 @@ export const ContentFooter = () => {
     <div className='footer'>
       <h4>
         Desarrollado por Juan Esteban Gonzalez Caro
+        <p className='contact'>
+          Correo: juanestebangonzalezcaro567@gmail.com <br />
+          Telefono: +57 322 545 8579
+        </p>
       </h4>
 
       <h4>

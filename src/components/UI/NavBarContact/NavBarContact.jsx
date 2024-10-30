@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa";
 import { MdOutgoingMail } from "react-icons/md"
 import { PiReadCvLogoFill } from "react-icons/pi"
+import { FaWhatsapp } from "react-icons/fa";
 
 export const NavBarContact = () => {
 
@@ -18,6 +19,9 @@ export const NavBarContact = () => {
     { icon: FaGithub, 
       text: 'GitHub', 
       link: 'https://github.com/JEGonDev'},
+    { icon: FaWhatsapp, 
+      text: 'Whatsapp', 
+      link: 'https://wa.me/573225458579' },
     { icon: MdOutgoingMail, 
       text: 'juanestebangonzalezcaro567@gmail.com', 
       link: 'https://mail.google.com/mail/?view=cm&to=juanestebangonzalezcaro567@gmail.com' },
@@ -25,6 +29,7 @@ export const NavBarContact = () => {
 
   return (
     <nav>
+      <h2 className='title-contact'>Contactame</h2>
       <ul className='items-contact'>
         {contactItems.map((item, index) => (
           <ItemNavBar 

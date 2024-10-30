@@ -7,4 +7,10 @@
   color: rgb(241, 253, 166);
   font-size: medium;
   font-weight: 0;
+  align-items: center;
+}
+
+.contact {
+  font-size: small;
+  font-weight: 0;
 }

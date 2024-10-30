@@ -29,40 +29,40 @@ import { IoLogoVercel } from "react-icons/io5";
 import { FaFigma } from "react-icons/fa";
 import { FaNpm } from "react-icons/fa";
 
+export const listStack = {
+  backend: [
+    { name: 'Java', icon: FaJava },
+    { name: 'Spring', icon: SiSpring },
+    { name: 'Spring Boot', icon: SiSpringboot },
+    { name: 'Spring Security', icon: SiSpringsecurity },
+    { name: 'MySQL', icon: GrMysql },
+    { name: 'SQLite', icon: SiSqlite },
+  ],
+
+  frontend: [
+    { name: 'JavaScript', icon: IoLogoJavascript },
+    { name: 'HTML5', icon: FaHtml5 },
+    { name: 'CSS3', icon: FaCss3Alt },
+    { name: 'React', icon: FaReact },
+    { name: 'Tailwind CSS', icon: RiTailwindCssFill },
+  ],
+
+  tools: [
+    { name: 'Git', icon: FaGitAlt },
+    { name: 'GitHub', icon: FaGithub },
+    { name: 'Git Branching', icon: IoIosGitBranch },
+    { name: 'Postman', icon: SiPostman },
+    { name: 'Vercel', icon: IoLogoVercel },
+    { name: 'npm', icon: FaNpm },
+    { name: 'Figma', icon: FaFigma },
+    { name: 'VS Code', icon: SiVisualstudiocode },
+    { name: 'IntelliJ IDEA', icon: SiIntellijidea },
+    { name: 'Eclipse', icon: SiEclipseide },
+  ]
+}
+
+
 export const TechStack = () => {
-
-  const listStack = {
-    backend: [
-      { name: 'Java', icon: FaJava },
-      { name: 'Spring', icon: SiSpring },
-      { name: 'Spring Boot', icon: SiSpringboot },
-      { name: 'Spring Security', icon: SiSpringsecurity },
-      { name: 'MySQL', icon: GrMysql },
-      { name: 'SQLite', icon: SiSqlite },
-    ],
-
-    frontend: [
-      { name: 'JavaScript', icon: IoLogoJavascript },
-      { name: 'HTML5', icon: FaHtml5 },
-      { name: 'CSS3', icon: FaCss3Alt },
-      { name: 'React', icon: FaReact },
-      { name: 'Tailwind CSS', icon: RiTailwindCssFill },
-    ],
-
-    tools: [
-      { name: 'Git', icon: FaGitAlt },
-      { name: 'GitHub', icon: FaGithub },
-      { name: 'Git Branching', icon: IoIosGitBranch },
-      { name: 'Postman', icon: SiPostman },
-      { name: 'Vercel', icon: IoLogoVercel },
-      { name: 'npm', icon: FaNpm },
-      { name: 'Figma', icon: FaFigma },
-      { name: 'VS Code', icon: SiVisualstudiocode },
-      { name: 'IntelliJ IDEA', icon: SiIntellijidea },
-      { name: 'Eclipse', icon: SiEclipseide },
-    ]
-  }
-
   return (
     <>
       <section className='tech-section'>
