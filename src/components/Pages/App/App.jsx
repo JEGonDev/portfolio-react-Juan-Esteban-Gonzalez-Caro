@@ -7,12 +7,12 @@ import './App.css'
 
 export const App = () => {
   return (
-    <>
-      <Header id='home'/>
-      <SectionAbout id='contact'/>
-      <SectionProjects id='services'/>
-      <SectionTechStack id='stack'/>
+    <div id='home'>
+      <Header/>
+      <div id='contact'> <SectionAbout/> </div>
+      <div id='services'> <SectionProjects/> </div>
+      <div id='stack'> <SectionTechStack/> </div>
       <Footer/>
-    </>
+    </div>
   )
 }

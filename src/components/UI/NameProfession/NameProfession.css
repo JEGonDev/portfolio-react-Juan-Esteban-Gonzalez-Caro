@@ -1,5 +1,5 @@
 h1 {
-  font-size: 2.5rem;
+  font-size: 300%;
 }
 
 .name-color {
@@ -7,7 +7,7 @@ h1 {
 }
 
 .profession-low {
-  font-size: 1.7rem;
+  font-size: 55%;
 }
 
 @keyframes fade {

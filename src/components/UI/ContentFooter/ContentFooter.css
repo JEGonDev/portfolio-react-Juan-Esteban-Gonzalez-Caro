@@ -1,8 +1,10 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  margin-left: 20rem;
-  margin-right: 20rem;
-  padding: 0.5rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 0.5%;
   color: rgb(241, 253, 166);
+  font-size: medium;
+  font-weight: 0;
 }

@@ -7,7 +7,7 @@
   align-items: center;
   text-decoration: none;
   color: rgb(252, 254, 253);
-  font-size: 0.9rem;
+  font-size: medium;
 }
 
 .custom-item.about:hover {

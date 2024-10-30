@@ -1,10 +1,10 @@
 .nav-type-projects {
   display: flex;
   justify-content: space-around;
-  background-color: #333; /* Fondo oscuro */
-  border-radius: 20px; /* Bordes redondeados */
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  background-color: #333;
+  border-radius: 2rem; /* Bordes redondeados */
+  padding-left: 1rem;
+  padding-right: 1rem;
   width: fit-content;
-  margin-bottom: 4rem;
+  margin-bottom: 8%;
 }
