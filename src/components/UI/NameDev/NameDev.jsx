@@ -1,8 +1,7 @@
 import React from 'react'
-import './NameDev.css'
 
 export const NameDev = () => {
   return (
-    <h2>JEGonDev</h2>
+    <h2 className=''>JEGonDev</h2>
   )
 }

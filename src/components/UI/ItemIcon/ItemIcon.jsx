@@ -1,11 +1,10 @@
 import React from 'react'
-import './ItemIcon.css'
 
 export const ItemIcon = ({icon: Icon, name}) => {
   return (
-    <div className='icons'>
+    <div className=''>
       {Icon && (
-        <i><Icon className='icon-style'/></i>
+        <i><Icon className=''/></i>
       )}
       <p>{name}</p>
     </div>

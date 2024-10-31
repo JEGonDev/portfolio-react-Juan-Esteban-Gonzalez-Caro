@@ -1,5 +1,4 @@
 import React from 'react'
-import './TechStack.css'
 import { ItemIcon } from '../ItemIcon/ItemIcon'
 
 // iconos backend
@@ -65,27 +64,27 @@ export const listStack = {
 export const TechStack = () => {
   return (
     <>
-      <section className='tech-section'>
-        <h2 className='type-tech'>Backend</h2>
-        <div className='tech-icons'>
+      <section className=''>
+        <h2 className=''>Backend</h2>
+        <div className=''>
           {listStack.backend.map((tech, index) => (
             <ItemIcon key={index} icon={tech.icon} name={tech.name}/>
           ))}
         </div>
       </section>
 
-      <section className='tech-section'>
-        <h2 className='type-tech'>Frontend</h2>
-        <div className='tech-icons'>
+      <section className=''>
+        <h2 className=''>Frontend</h2>
+        <div className=''>
           {listStack.frontend.map((tech, index) => (
             <ItemIcon key={index} icon={tech.icon} name={tech.name}/>
           ))}
         </div>
       </section>
 
-      <section className='tech-section'>
-        <h2 className='type-tech'>Herramientas</h2>
-        <div className='tech-icons'>
+      <section className=''>
+        <h2 className=''>Herramientas</h2>
+        <div className=''>
           {listStack.tools.map((tech, index) => (
             <ItemIcon key={index} icon={tech.icon} name={tech.name}/>
           ))}

@@ -1,5 +1,4 @@
 import React from 'react'
-import './ProjectList.css'
 import project1 from './../../../assets/screenshots/project1.png'
 import project2 from './../../../assets/screenshots/project2.png'
 import project3 from './../../../assets/screenshots/project3.png'
@@ -60,16 +59,16 @@ export const ProjectList = ({ selectedType }) => {
   }
 
   return (
-    <div className="project-list">
+    <div className=''>
       {filteredProjects.map(project => (
-        <div key={project.id} className="project-card">
-          <div className="project-info">
-            <h5 className='type-project'>{project.type}</h5>
-            <h3 className='name-project'>{project.title}</h3>
-            <p className='description-project'>{project.description}</p>
-            <i className='technologies-project'>{project.techStack.join(' | ')}</i>
+        <div key={project.id} className=''>
+          <div className=''>
+            <h5 className=''>{project.type}</h5>
+            <h3 className=''>{project.title}</h3>
+            <p className=''>{project.description}</p>
+            <i className=''>{project.techStack.join(' | ')}</i>
           </div>
-          <img src={project.image} alt={project.title} className="project-image" />
+          <img src={project.image} alt={project.title} className='' />
       </div>
       ))}
     </div>

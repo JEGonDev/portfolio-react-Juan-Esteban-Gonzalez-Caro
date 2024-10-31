@@ -1,5 +1,4 @@
 import React from 'react'
-import './NavBarContact.css'
 import { ItemNavBar } from '../ItemNavBar/ItemNavBar'
 import { FaLinkedin } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa";
@@ -29,15 +28,14 @@ export const NavBarContact = () => {
 
   return (
     <nav>
-      <h2 className='title-contact'>Contactame</h2>
-      <ul className='items-contact'>
+      <h2 className=''>Contactame</h2>
+      <ul className=''>
         {contactItems.map((item, index) => (
           <ItemNavBar 
             key={index} 
             icon={item.icon}
             text={item.text}
             link={item.link}
-            variant='contact'
           />
         ))}
       </ul>

@@ -1,6 +1,5 @@
 import React from 'react'
 import { ItemNavBar } from '../ItemNavBar/ItemNavBar';
-import './NavBarAbout.css'
 
 const navItems = [
   { link: '#home', text: 'Inicio' },
@@ -12,13 +11,12 @@ const navItems = [
 export const NavBarAbout = () => {
   return (
     <nav>
-        <ul className='items-about'>
+        <ul className=''>
         {navItems.map((item, index) => (
           <ItemNavBar 
             key={index}
             link={item.link} 
             text={item.text} 
-            variant='about'
           />
         ))}</ul>
     </nav>

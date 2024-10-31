@@ -1,5 +1,4 @@
 import React from 'react'
-import './SectionTechStack.css'
 import { TechStack } from '../../UI/TechStack/TechStack'
 import { IntroductionTechStack } from '../../UI/IntroductionTechStack/IntroductionTechStack'
 
@@ -9,7 +8,7 @@ export const SectionTechStack = () => {
       <div>
         <IntroductionTechStack/>
       </div>
-      <div className='section-tech'>
+      <div className=''>
         <TechStack/>
       </div>
     </>
