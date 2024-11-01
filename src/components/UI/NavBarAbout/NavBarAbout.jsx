@@ -11,7 +11,11 @@ const navItems = [
 export const NavBarAbout = () => {
   return (
     <nav>
-        <ul className=''>
+        <ul className='
+          flex
+          gap-2 md:gap-5 lg:gap-10
+          text-sm md:text-xl lg:text-xl
+        '>
         {navItems.map((item, index) => (
           <ItemNavBar 
             key={index}

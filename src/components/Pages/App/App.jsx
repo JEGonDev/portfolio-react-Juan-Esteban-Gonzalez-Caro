@@ -3,11 +3,22 @@ import { Header } from '../../Layouts/Header/Header'
 import { SectionAbout } from '../../Layouts/SectionAbout/SectionAbout'
 import { SectionProjects } from '../../Layouts/SectionProjects/SectionProjects'
 import { SectionTechStack } from '../../Layouts/SectionTechStack/SectionTechStack'
-import './App.css'
 
 export const App = () => {
   return (
-    <div id='home'>
+    <div 
+      id='home' 
+      className='
+        bg-customGray1 
+        mr-0 
+        p-0 
+        font-sans 
+        text-base
+      text-customWhite1 
+        leading-6 
+        overflow-x-hidden
+        '
+      >
       <Header/>
       <div id='contact'> <SectionAbout/> </div>
       <div id='services'> <SectionProjects/> </div>
