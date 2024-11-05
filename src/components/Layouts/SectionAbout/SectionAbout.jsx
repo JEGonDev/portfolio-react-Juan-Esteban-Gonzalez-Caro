@@ -6,8 +6,14 @@ import { NavBarContact } from '../../UI/NavBarContact/NavBarContact'
 
 export const SectionAbout = () => {
   return (
-    <>
-      <div className=''>
+    <div className='
+      bg-customGray2
+      pt-16 md:pt-24 lg:pt-28
+      pb-16 md:pb-24 lg:pb-28
+      pl-6 md:pl-12 lg:pl-80
+      pr-6 md:pr-12 lg:pr-80
+    '>
+      <div className='md:flex'>
         <div className=''>
           <NameProfession/>
           <Description/>
@@ -17,6 +23,6 @@ export const SectionAbout = () => {
         </div>
       </div>
           <NavBarContact/>
-    </>
+    </div>
   )
 }

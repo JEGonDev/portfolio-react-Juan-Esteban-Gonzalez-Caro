@@ -29,13 +29,14 @@ export const NavBarContact = () => {
   return (
     <nav>
       <h2 className=''>Contactame</h2>
-      <ul className=''>
+      <ul className='md:flex'>
         {contactItems.map((item, index) => (
           <ItemNavBar 
             key={index} 
             icon={item.icon}
             text={item.text}
             link={item.link}
+            variant='contact'
           />
         ))}
       </ul>

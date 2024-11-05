@@ -1,11 +1,12 @@
 import React from 'react'
+import './ItemNavBar.css'
 
 export const ItemNavBar = ({link , text, icon: Icon, variant, onClick}) => {
   return (
     <li className=''>
       <a 
         href={link}
-        className=''
+        className={`custom-item ${variant}`} 
         onClick={onClick}
       >
         {Icon && <Icon className='' />} {/*}Renderiza el icono solo si existe*/}

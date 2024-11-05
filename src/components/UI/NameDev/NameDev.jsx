@@ -4,8 +4,8 @@ export const NameDev = () => {
   return (
     <h2 className='
       text-customYellow1
-      font-bold
-      text-xl md:text-2xl lg:text-3xl
+      font-semibold
+      text-base md:text-xl lg:text-2xl
     '>JEGonDev</h2>
   )
 }

@@ -14,13 +14,14 @@ export const NavBarAbout = () => {
         <ul className='
           flex
           gap-2 md:gap-5 lg:gap-10
-          text-sm md:text-xl lg:text-xl
+          text-sm md:text-base lg:text-lg
         '>
         {navItems.map((item, index) => (
           <ItemNavBar 
             key={index}
             link={item.link} 
             text={item.text} 
+            variant='about'
           />
         ))}</ul>
     </nav>

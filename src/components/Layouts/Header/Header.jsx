@@ -10,8 +10,9 @@ export const Header = () => {
       flex 
       justify-between 
       items-center 
-      h-24 md:h-28 lg:h-32 
+      h-20 md:h-24 lg:h-28 
       px-5 md:px-20 lg:px-60
+      z-50
     '
     >
       <NameDev/>

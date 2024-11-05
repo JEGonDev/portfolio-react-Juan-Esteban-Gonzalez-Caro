@@ -13,8 +13,16 @@ export default {
         customWhite1: 'rgb(248, 250, 249)',
         customYellow1: 'rgb(227, 232, 165)',
       },
+      keyframes: {
+        fade: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.3' },
+        },
+      },
+      animation: {
+        fade: 'fade 2s linear infinite',
+      },
     },
   },
   plugins: [],
 }
-

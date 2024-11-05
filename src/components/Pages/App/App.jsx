@@ -13,9 +13,8 @@ export const App = () => {
         mr-0 
         p-0 
         font-sans 
-        text-base
+        text-xl
       text-customWhite1 
-        leading-6 
         overflow-x-hidden
         '
       >

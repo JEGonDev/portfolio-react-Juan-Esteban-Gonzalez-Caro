@@ -26,6 +26,7 @@ export const NavBarProjects = () => {
             key={index} 
             text={type.text} 
             onClick={() => select(type.text)}
+            variant='projects'
           />
         ))}
       </div>
