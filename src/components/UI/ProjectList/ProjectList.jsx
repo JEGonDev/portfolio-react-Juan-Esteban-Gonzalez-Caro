@@ -73,9 +73,9 @@ export const ProjectList = ({ selectedType }) => {
           mb-8 md:mb-12
         '>
           <>
-            <h5 className='text-customYellow1 text-2xl font-semibold mb-4 md:mb-6'>{project.type}</h5>
-            <h3 className='font-semibold text-3xl mb-4 md:mb-6'>{project.title}</h3>
-            <p className='text-base md:text-lg lg:text-xl leading-6 lg:leading-8 mb-4 md:mb-6'>{project.description}</p>
+            <h5 className='text-customYellow1 text-lg md:text-xl font-semibold mb-4 md:mb-6'>{project.type}</h5>
+            <h3 className='font-semibold text-xl md:2xl mb-4 md:mb-6'>{project.title}</h3>
+            <p className='text-base md:text-lg lg:text-xl leading-6 lg:leading-7 mb-4 md:mb-6'>{project.description}</p>
             <i className='text-customYellow1 font-semibold text-base md:text-lg lg:text-xl'>{project.techStack.join(' || ')}</i>
             <a href={project.link}>
               <img src={project.image} alt={project.title} className='mt-4 md:mt-6 rounded-2xl h' />
