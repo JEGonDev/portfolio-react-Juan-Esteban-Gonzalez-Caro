@@ -15,6 +15,7 @@ import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { FaAngular } from "react-icons/fa";
 
 // iconos herramientas
 import { SiVisualstudiocode } from "react-icons/si";
@@ -44,6 +45,7 @@ export const listStack = {
     { name: 'CSS3', icon: FaCss3Alt },
     { name: 'React', icon: FaReact },
     { name: 'Tailwind CSS', icon: RiTailwindCssFill },
+    { name: 'Angular', icon: FaAngular },
   ],
 
   tools: [

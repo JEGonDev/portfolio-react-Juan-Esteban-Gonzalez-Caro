@@ -10,8 +10,8 @@ export const NavBarContact = () => {
 
   const contactItems = [
     { icon: PiReadCvLogoFill, 
-      text: 'Descargar CV', 
-      link: 'https://drive.google.com/uc?export=download&id=1SBV2jHNyh-ODPJMbuibESzpBRvy5zoq2'},
+      text: 'Ver CV', 
+      link: 'https://drive.google.com/file/d/1SBV2jHNyh-ODPJMbuibESzpBRvy5zoq2/view'},
     { icon: FaLinkedin, 
       text: 'Linkedin', 
       link: 'https://www.linkedin.com/in/juan-esteban-gonz%C3%A1lez-caro-41330b25b/'},
@@ -27,9 +27,20 @@ export const NavBarContact = () => {
   ]
 
   return (
-    <nav>
-      <h2 className=''>Contactame</h2>
-      <ul className='md:flex'>
+    <nav className='
+      animate-flip-up
+    '>
+      <h2 className='
+      text-customYellow1
+        pb-4
+        font-semibold
+      '>Contactame
+      </h2>
+
+      <ul className='
+        md:flex 
+        md:gap-2 lg:gap-6
+      '>
         {contactItems.map((item, index) => (
           <ItemNavBar 
             key={index} 

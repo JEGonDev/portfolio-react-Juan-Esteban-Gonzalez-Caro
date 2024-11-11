@@ -13,12 +13,12 @@ export const SectionAbout = () => {
       pl-6 md:pl-12 lg:pl-80
       pr-6 md:pr-12 lg:pr-80
     '>
-      <div className='md:flex'>
-        <div className=''>
+      <div className='md:flex items-center'>
+        <div className='md:w-2/3 lg:w-3/4 animate-fade-right'>
           <NameProfession/>
           <Description/>
         </div>
-        <div className=''>
+        <div className='md:w-1/3 lg:w-1/4 animate-fade-left'>
           <PhotoPresentation/>
         </div>
       </div>
