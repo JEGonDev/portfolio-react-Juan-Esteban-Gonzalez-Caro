@@ -20,7 +20,15 @@ export const NavBarProjects = () => {
   return (
     <>
       <IntroductionProjects/>
-      <div className=''>
+      <div className='
+        flex
+        justify-center 
+        items-center 
+        rounded-2xl
+        w-auto md:w-96
+        mb-8 md:mb-12
+        bg-customGray4
+      '>
         {typeProject.map((type, index) => (
           <ItemNavBar 
             key={index} 
@@ -30,7 +38,9 @@ export const NavBarProjects = () => {
           />
         ))}
       </div>
-      <ProjectList selectedType={selectedType}/> {/* Renderiza la lista de proyectos filtrada */}
+      <div className='transition-opacity duration-1000'>
+        <ProjectList selectedType={selectedType}/> {/* Renderiza la lista de proyectos filtrada */}
+      </div>
     </>
   )
 }

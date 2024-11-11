@@ -13,6 +13,7 @@ const projects = [
     description: 'Proyecto desarrollado con React, que proporciona información general sobre horarios, eventos, docentes y cursos disponibles. La aplicación ofrece una interfaz intuitiva y responsiva, permitiendo a los usuarios acceder fácilmente a la información necesaria de manera rápida y eficiente.',
     techStack: ['React', 'JavaScript', 'HTML5', 'CSS3'],
     image: project1,
+    link: ''
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ const projects = [
     description: 'API Rest de una tienda de mascotas, con funcionalidades CRUD y seguridad web implementadas en Spring Boot y Spring Security. Incluye MapStruct para el mapeo eficiente entre entidades y DTOs.',
     techStack: ['Java', 'Spring Boot', 'Spring Security', 'MySQL'],
     image: project2,
+    link: 'https://github.com/JEGonDev/PetShopAPI-SpringBoot'
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ const projects = [
     description: 'Aplicación web que consume una API de productos de una tienda de ropa, mostrando los artículos en tarjetas generadas con JavaScript. Los usuarios pueden agregar productos a un carrito de compras interactivo, ver el total y eliminar artículos según deseen.',
     techStack: ['JavaScript', 'HTML5', 'CSS3'],
     image: project3,
+    link: 'https://e-commerce-eta-gilt.vercel.app/'
   },
   {
     id: 4,
@@ -37,6 +40,7 @@ const projects = [
     description: 'API Rest de una heladería, con funcionalidades CRUD implementadas en Spring Boot. Se utiliza MapStruct para el mapeo eficiente entre entidades y DTOs.',
     techStack: ['Java', 'Spring Boot', 'MySQL'],
     image: project4,
+    link: 'https://github.com/JEGonDev/Heladeria-SpringBoot-React'
   },
   {
     id: 5,
@@ -45,6 +49,7 @@ const projects = [
     description: 'Formulario de "Contáctenos" desarrollado con JavaScript y Email.js, que permite a los usuarios enviar mensajes directamente desde la aplicación. Incluye validación de campos y confirmación de envío, brindando una experiencia de usuario intuitiva y eficiente.',
     techStack: ['JavaScript', 'HTML5', 'CSS5'],
     image: project5,
+    link: 'https://formlario-contactenos-email-js.vercel.app/'
   },
 ]
 
@@ -52,25 +57,32 @@ export const ProjectList = ({ selectedType }) => {
 
   let filteredProjects
 
-  if (selectedType === 'Todos') {
-    filteredProjects = projects
-  } else {
-    filteredProjects = projects.filter((project) => project.type === selectedType)
-  }
+  selectedType === 'Todos' 
+  ? filteredProjects = projects 
+  : filteredProjects = projects.filter((project) => project.type === selectedType)
 
   return (
-    <div className=''>
+    <>
       {filteredProjects.map(project => (
-        <div key={project.id} className=''>
-          <div className=''>
-            <h5 className=''>{project.type}</h5>
-            <h3 className=''>{project.title}</h3>
-            <p className=''>{project.description}</p>
-            <i className=''>{project.techStack.join(' | ')}</i>
-          </div>
-          <img src={project.image} alt={project.title} className='' />
+        <div 
+        key={project.id} 
+        className='
+          rounded-2xl 
+          bg-customGray4 
+          p-5 md:p-10 
+          mb-8 md:mb-12
+        '>
+          <>
+            <h5 className='text-customYellow1 text-2xl font-semibold mb-4 md:mb-6'>{project.type}</h5>
+            <h3 className='font-semibold text-3xl mb-4 md:mb-6'>{project.title}</h3>
+            <p className='text-base md:text-lg lg:text-xl leading-6 lg:leading-8 mb-4 md:mb-6'>{project.description}</p>
+            <i className='text-customYellow1 font-semibold text-base md:text-lg lg:text-xl'>{project.techStack.join(' || ')}</i>
+            <a href={project.link}>
+              <img src={project.image} alt={project.title} className='mt-4 md:mt-6 rounded-2xl h' />
+            </a>
+          </>
       </div>
       ))}
-    </div>
+    </>
   )
 }

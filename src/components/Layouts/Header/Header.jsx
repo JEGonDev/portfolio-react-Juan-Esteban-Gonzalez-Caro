@@ -10,11 +10,12 @@ export const Header = () => {
       flex 
       justify-between 
       items-center 
-      h-20 md:h-24 lg:h-28 
+      h-20 md:h-24 lg:h-24 
       px-5 md:px-20 lg:px-60
       z-50
-    '
-    >
+      w-full
+      fixed
+    '>
       <NameDev/>
       <NavBarAbout/>
     </header>

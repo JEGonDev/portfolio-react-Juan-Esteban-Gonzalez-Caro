@@ -19,7 +19,7 @@ export const App = () => {
         '
       >
       <Header/>
-      <div id='contact'> <SectionAbout/> </div>
+      <div id='contact' className='mt-16 md:mt-24'> <SectionAbout/> </div>
       <div id='services'> <SectionProjects/> </div>
       <div id='stack'> <SectionTechStack/> </div>
       <Footer/>
