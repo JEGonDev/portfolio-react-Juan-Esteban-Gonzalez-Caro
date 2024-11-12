@@ -67,7 +67,7 @@ export const TechStack = () => {
   return (
     <div className='mt-8 md:pl-20 md:pr-20'>
       <section className='bg-customGray4 rounded-2xl p-4 pb-8 mb-8'>
-        <h2 className='font-semibold text-customYellow1 text-center pb-6'>Backend</h2>
+        <h2 className='font-semibold text-customYellow1 text-center pb-8 md:text-xl lg:text-2xl'>Backend</h2>
           <div className='flex flex-wrap gap-8 justify-center'>
             {listStack.backend.map((tech, index) => (
               <ItemIcon key={index} icon={tech.icon} name={tech.name} />
@@ -76,7 +76,7 @@ export const TechStack = () => {
       </section>
 
       <section className='bg-customGray4 rounded-2xl p-4 pb-8 mb-8'>
-        <h2 className='font-semibold text-customYellow1 text-center pb-6'>Frontend</h2>
+        <h2 className='font-semibold text-customYellow1 text-center pb-8 md:text-xl lg:text-2xl'>Frontend</h2>
           <div className='flex flex-wrap gap-8 justify-center'>
             {listStack.frontend.map((tech, index) => (
               <ItemIcon key={index} icon={tech.icon} name={tech.name} />
@@ -84,8 +84,8 @@ export const TechStack = () => {
           </div>
       </section>
 
-      <section className='bg-customGray4 rounded-2xl p-4 pb-8 mb-8'>
-        <h2 className='font-semibold text-customYellow1 text-center pb-6'>Herramientas</h2>
+      <section className='bg-customGray4 rounded-2xl p-4 pb-8'>
+        <h2 className='font-semibold text-customYellow1 text-center pb-8 md:text-xl lg:text-2xl'>Herramientas</h2>
           <div className='flex flex-wrap gap-8 justify-center'>
             {listStack.tools.map((tech, index) => (
               <ItemIcon key={index} icon={tech.icon} name={tech.name} />
